@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/contrata-eu.png';
 import { LogoImage, MenuWrapper } from './style.js';
 import Button from '../Button';
@@ -7,11 +8,11 @@ import Button from '../Button';
 function Menu() {
   return (
     <MenuWrapper className="Menu">
-      <a href="/">
+      <Link to="/">
         <LogoImage className="Logo" src={Logo} alt="Contrata-eu Logo" />
-      </a>
+      </Link>
 
-      <Button as="a" className="" href="/">
+      <Button as={Link} className="" to="/cadastro/video">
         Novo vídeo
       </Button>
     </MenuWrapper>
