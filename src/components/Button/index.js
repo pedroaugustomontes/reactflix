@@ -1,23 +1,31 @@
 import styled from 'styled-components';
 
-const Button = styled.button`
-  color: var(--white);
+export const Button = styled.button`
+  border-radius: 4px;
   border: 1px solid var(--white);
-  box-sizing: border-box;
-  cursor: pointer;
-  padding: 16px 24px;
-  font-style: normal;
-  font-weight: bold;
+  color: var(--white);
   font-size: 16px;
-  outline: none;
-  border-radius: 5px;
+  font-weight: bold;
+  padding: 16px 24px;
   text-decoration: none;
-  display: inline-block;
   transition: opacity 0.3s;
 
   &:hover,
-  &:focus {
+  &focus {
     opacity: 0.5;
+  }
+
+  @media (max-width: 800px) {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 0;
+    color: var(--white);
+    outline: 0;
+    text-align: center;
   }
 `;
 
