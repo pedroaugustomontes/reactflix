@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Button = styled.button`
   border-radius: 4px;
   border: 1px solid var(--white);
+  background-color: var(--black);
   color: var(--white);
   font-size: 16px;
   font-weight: bold;
@@ -20,7 +21,7 @@ export const Button = styled.button`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--primary);
+    background-color: var(--black);
     border: 0;
     border-radius: 0;
     color: var(--white);
